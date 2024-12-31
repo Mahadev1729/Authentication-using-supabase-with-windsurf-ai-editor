@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Web - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="dashboard-nav">
+            <h1>Test Web</h1>
+            <button onclick="logout()">Logout</button>
+        </nav>
+        <div class="dashboard-content">
+            <h2>Welcome, <span id="userName"></span>!</h2>
+            <div class="content-section">
+                <h3>Protected Content</h3>
+                <p>This is private content that only logged-in users can see.</p>
+                <p>You can add more content and features here!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if user is logged in
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'index.html';
+        }
+
+        // Display user name
+        const userData = JSON.parse(localStorage.getItem('userData'));
+        if (userData) {
+            document.getElementById('userName').textContent = userData.name;
+        }
+
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
