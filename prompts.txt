@@ -1,0 +1,13 @@
+Prompt 1:
+
+1. I want to create a simple test website called “Web Auth” where users can create an account and log in to see content. Use only HTML and CSS.
+2. Create a simple homepage that describes the website and encourages visitors to sign up to see the duck photo.
+3. Create a dashboard page that shows a duck photo (Duck.JPEG).
+4. Both homepage and dashboard pages will have the same styling.
+5. Let’s do it slowly. Build those two pages first. Other pages and authentication logic will be added later.
+
+Prompt 2:
+
+1. Create sign up, sign in, check email confirmation, and reset password pages.
+2. Make sure the design and styling is consistent across pages.
+3. Don’t add authentication logic yet. We’ll do it later.

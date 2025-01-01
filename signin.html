@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Web Auth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="site-title">Web Auth</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content auth-form">
+            <h1>Sign In</h1>
+            <p>Welcome back! Please sign in to continue</p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%">Sign In</button>
+            </form>
+
+            <div class="auth-links">
+                <p><a href="reset-password.html">Forgot password?</a></p>
+                <div class="divider"><span>or</span></div>
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
